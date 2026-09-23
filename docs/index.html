@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>전현수 · 예수인교회 | 디지털 명함</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Open Graph (KakaoTalk / Facebook 링크 미리보기) -->
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://hyunsoo1713-dot.github.io/hyunsoo-card/">
+<meta name="description" content="예수인교회 전현수 목사의 디지털 명함입니다. 연락처와 교회·SNS 소식을 만나보세요.">
+<meta property="og:description" content="예수인교회 전현수 목사의 연락처와 교회·SNS 소식을 만나보세요.">
+<meta property="og:url" content="https://hyunsoo1713-dot.github.io/hyunsoo-card/">
+<meta property="og:title" content="전현수 · 예수인교회">
+<meta property="og:image" content="https://hyunsoo1713-dot.github.io/hyunsoo-card/profile.jpg">
+<meta property="og:image:width" content="1122">
+<meta property="og:image:height" content="1175">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="전현수 · 예수인교회 링크명함">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="예수인교회">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="전현수 · 예수인교회">
+<meta name="twitter:image" content="https://hyunsoo1713-dot.github.io/hyunsoo-card/profile.jpg">
+<link rel="icon" href="./emblem.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<link href="./fonts.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&amp;display=swap" rel="stylesheet">
+<style>
+  /* ===== eum_웹토큰_v2 (골드 엘레강스 리스트형 디자인 시스템) =====
+     참고 레퍼런스(네일샵 링크명함) 스타일에 맞춰 블루/3D orb 시스템에서 전면 교체. */
+  :root{
+    /* TIER1 PRIMITIVES */
+    --p-gold-main:#B4915A; --p-gold-main-rgb:180,145,90;
+    --p-gold-deep:#8C6F3E; --p-gold-deep-rgb:140,111,62;
+    --p-gold-light:#E8D9BE; --p-gold-light-rgb:232,217,190;
+    --p-bg-cream:#FBF6EE; --p-bg-blush:#F4EAD9; --p-bg-white:#FFFFFF;
+    --p-ink-900:#2A2420; --p-ink-700:#5C5346; --p-ink-500:#8C8172;
+    --p-state-disabled-ink:#B9AF9E; --p-state-disabled-bg:#F3EEE4;
+    /* TIER2 SEMANTICS (전부 위 primitives 참조, 리터럴 없음) */
+    --primary-gold:var(--p-gold-main); --primary-gold-deep:var(--p-gold-deep); --primary-gold-light:var(--p-gold-light);
+    --primary-gold-rgb:var(--p-gold-main-rgb); --primary-gold-deep-rgb:var(--p-gold-deep-rgb);
+    --bg-page:var(--p-bg-cream); --bg-surface:var(--p-bg-white); --bg-surface-muted:var(--p-bg-blush); --bg-panel:var(--p-gold-light);
+    --ink:var(--p-ink-900); --ink-secondary:var(--p-ink-700); --ink-tertiary:var(--p-ink-500); --ink-on-gold:var(--p-bg-white);
+    --state-disabled-ink:var(--p-state-disabled-ink); --state-disabled-bg:var(--p-state-disabled-bg);
+    --shadow-frame:0 30px 60px -26px rgba(var(--primary-gold-deep-rgb),.30);
+    --shadow-cta:0 14px 26px -12px rgba(var(--primary-gold-rgb),.55);
+    --shadow-row:0 10px 22px -14px rgba(var(--primary-gold-deep-rgb),.35);
+    --font-serif:'Noto Serif KR', serif;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; min-height:100%; font-family:var(--font-family-base,'Pretendard'),-apple-system,sans-serif;
+    background:linear-gradient(180deg,var(--bg-surface-muted) 0%,var(--bg-page) 55%,var(--bg-page) 100%);
+    display:flex; justify-content:center; padding:0 0 70px; overflow-x:hidden;
+  }
+
+  .page{ width:100%; max-width:420px; position:relative; }
+
+  .frame{
+    border-radius:0 0 var(--radius-xl,32px) var(--radius-xl,32px); overflow:hidden;
+    box-shadow:var(--shadow-frame);
+  }
+
+  /* 상단 히어로 사진 — 크롭 없이 원본 비율 그대로 표시 (사진 하단 글자 잘림 방지) */
+  .hero{ position:relative; width:100%; overflow:hidden; background:var(--bg-panel); line-height:0; }
+  .hero img{ width:100%; height:auto; display:block; }
+  .hero::after{
+    content:""; position:absolute; inset:auto 0 0 0; height:45%;
+    background:linear-gradient(180deg, rgba(42,36,32,0) 0%, rgba(42,36,32,.55) 100%);
+  }
+
+  .card{ background:var(--bg-surface); padding:0 26px 28px; text-align:center; position:relative; }
+
+  /* 엠블럼 */
+  .emblem-wrap{ display:flex; justify-content:center; margin-top:-46px; position:relative; z-index:2; }
+  .emblem{
+    width:92px; height:92px; border-radius:50%; background:var(--bg-surface);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 12px 24px -10px rgba(var(--primary-gold-deep-rgb),.45), 0 0 0 6px var(--bg-surface);
+    border:1.5px solid var(--primary-gold-light);
+  }
+  .emblem svg{ width:38px; height:38px; }
+  .emblem img{ width:auto; height:46px; object-fit:contain; }
+
+  .cat{ margin:18px 0 0; font-size:11px; font-weight:700; color:var(--primary-gold-deep); letter-spacing:.32em; text-transform:uppercase; }
+  h1{ margin:8px 0 0; font-family:var(--font-serif); font-size:30px; font-weight:700; letter-spacing:-.01em; color:var(--ink); }
+  .role{ margin:6px 0 0; font-size:12.5px; font-weight:700; color:var(--primary-gold-deep); letter-spacing:.2em; text-transform:uppercase; }
+
+  .rule-deco{ display:flex; align-items:center; justify-content:center; gap:10px; margin:18px 0; }
+  .rule-deco span{ height:1px; width:48px; background:var(--bg-panel); }
+  .rule-deco svg{ width:12px; height:12px; }
+
+  .tagline{ margin:0; font-size:13.5px; line-height:1.75; color:var(--ink-tertiary); }
+
+  .social-row{ display:flex; gap:14px; justify-content:center; margin-top:20px; }
+  .social-row a{ text-decoration:none; }
+  .sic{
+    width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    border:1.4px solid var(--primary-gold-light); background:var(--bg-surface); transition:transform .16s ease, border-color .16s ease;
+  }
+  .sic svg{ width:19px; height:19px; }
+  .social-row a:hover .sic{ transform:translateY(-2px); border-color:var(--primary-gold); }
+  .social-row a:focus-visible .sic{ outline:2px solid var(--primary-gold); outline-offset:2px; }
+
+  .rule{ height:1px; background:var(--bg-panel); margin:26px 0 20px; }
+
+  .section-h{ margin:0 0 12px; font-size:11px; font-weight:700; color:var(--ink-tertiary); letter-spacing:.18em; text-transform:uppercase; text-align:left; }
+
+  /* 리스트형 메뉴 행 */
+  .rows{ display:flex; flex-direction:column; gap:10px; margin-bottom:22px; }
+  .row{
+    display:flex; align-items:center; gap:14px; text-decoration:none; text-align:left;
+    padding:14px 16px; border-radius:18px; background:var(--bg-surface-muted);
+    border:1px solid var(--bg-panel); transition:transform .16s ease, box-shadow .16s ease;
+  }
+  .row:hover{ transform:translateY(-2px); box-shadow:var(--shadow-row); }
+  .row:focus-visible{ outline:2px solid var(--primary-gold); outline-offset:2px; }
+  .row-ic{
+    flex:0 0 auto; width:44px; height:44px; border-radius:50%; background:var(--bg-surface);
+    display:flex; align-items:center; justify-content:center; border:1px solid var(--bg-panel);
+  }
+  .row-ic svg{ width:19px; height:19px; }
+  .row-tx{ flex:1 1 auto; min-width:0; }
+  .row-t{ display:block; font-size:14.5px; font-weight:700; color:var(--ink); }
+  .row-d{ display:block; margin-top:2px; font-size:12px; color:var(--ink-tertiary); line-height:1.5; }
+  .row-chev{ flex:0 0 auto; width:28px; height:28px; border-radius:50%; background:var(--bg-surface); display:flex; align-items:center; justify-content:center; }
+  .row-chev svg{ width:14px; height:14px; }
+
+  .bio{ text-align:left; margin-bottom:22px; }
+  .bio-tx{ margin:0; font-size:14px; line-height:1.7; color:var(--ink-secondary); }
+
+  .cta{
+    display:flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-top:4px;
+    padding:16px 18px; border:none; cursor:pointer; border-radius:var(--radius-md,16px);
+    font-family:inherit; font-size:15px; font-weight:700; color:var(--ink-on-gold);
+    background:linear-gradient(135deg,var(--primary-gold),var(--primary-gold-deep)); box-shadow:var(--shadow-cta);
+  }
+  .cta:hover{ transform:translateY(-2px); }
+
+  .footer{ text-align:center; margin-top:30px; }
+  .footer-h{ margin:0; font-size:11.5px; font-weight:700; color:var(--ink-tertiary); letter-spacing:.28em; text-transform:uppercase; }
+  .footer .rule-deco{ margin:12px 0; }
+  .footer-icons{ display:flex; gap:16px; justify-content:center; margin:14px 0 12px; }
+  .footer-icons .sic{ width:38px; height:38px; }
+  .footer-icons .sic svg{ width:16px; height:16px; }
+  .made{ margin:0; font-size:11.5px; color:var(--ink-tertiary); }
+</style>
+
+<style id="grabbit-visited-styles">
+        .grabbit-visited,
+        .grabbit-visited:link,
+        .grabbit-visited:visited {
+            color: #551A8B !important; /* Standard visited link purple */
+        }
+    </style></head><body>
+<div class="page">
+  <div class="frame">
+    <div class="hero">
+      <img src="./profile.jpg" alt="전현수 목사">
+    </div>
+    <div class="card">
+      <div class="emblem-wrap">
+        <div class="emblem">
+          <img src="./emblem.png" alt="예수인교회 로고">
+        </div>
+      </div>
+
+      <p class="cat">Church</p>
+      <h1>예수인교회</h1>
+      <p class="role">담임목사 · 전현수</p>
+
+      <div class="rule-deco"><span></span><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="#B4915A"></path></svg><span></span></div>
+
+      <p class="tagline">예수 안에서 사람을 세우고, 삶을 잇는 교회<br>언제든 편하게 연락 주세요.</p>
+
+      <div class="social-row">
+        <a href="tel:01072447951" aria-label="전화"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4c1-1 2-1 3 0l2 2c1 1 1 2-1 4l-1 1c1 2 2 3 4 4l1-1c2-2 3-2 4-1l2 2c1 1 1 2-1 3-3 3-8 2-12-2S3 7 6 4z" fill="#8C6F3E"></path></svg></span></a>
+        <a href="sms:01072447951" aria-label="문자"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4.2 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path><circle cx="8" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="12" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="16" cy="10.5" r="1.1" fill="#8C6F3E"></circle></svg></span></a>
+        <a href="mailto:hyunsoo1713@gmail.com" aria-label="메일"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2.5" fill="none" stroke="#8C6F3E" stroke-width="1.8"></rect><path d="M4 7.5l8 6 8-6" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path></svg></span></a>
+        <a href="https://peopleinjesus.org" target="_blank" rel="noopener" aria-label="홈페이지"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#8C6F3E" stroke-width="1.6"></circle><path d="M3.7 12h16.6M12 3.7c2.3 2.3 3.5 5.3 3.5 8.3s-1.2 6-3.5 8.3c-2.3-2.3-3.5-5.3-3.5-8.3s1.2-6 3.5-8.3z" stroke="#8C6F3E" stroke-width="1.6" fill="none"></path></svg></span></a>
+      </div>
+
+      <div class="rule"></div>
+
+      <div class="bio">
+        <p class="section-h">소개</p>
+        <p class="bio-tx">
+          <b>현재</b><br>
+          예수인교회 담임목사<br>
+          <a href="https://bookk.co.kr/bookStore/6aabe013e8fa532cab753451" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; text-underline-offset:2px;">『세상을 바꾸는 가장 기쁜 소식』 저자</a>
+        </p>
+      </div>
+
+      <div class="rule"></div>
+
+      <p class="section-h">Contact</p>
+      <div class="rows">
+        <a class="row" href="tel:01072447951">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4c1-1 2-1 3 0l2 2c1 1 1 2-1 4l-1 1c1 2 2 3 4 4l1-1c2-2 3-2 4-1l2 2c1 1 1 2-1 3-3 3-8 2-12-2S3 7 6 4z" fill="#8C6F3E"></path></svg></span>
+          <span class="row-tx"><span class="row-t">전화</span><span class="row-d">010-7244-7951 로 바로 연결됩니다.</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+        <a class="row" href="sms:01072447951">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4.2 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path><circle cx="8" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="12" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="16" cy="10.5" r="1.1" fill="#8C6F3E"></circle></svg></span>
+          <span class="row-tx"><span class="row-t">문자</span><span class="row-d">문자로 편하게 남겨 주세요.</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+        <a class="row" href="mailto:hyunsoo1713@gmail.com">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2.5" fill="none" stroke="#8C6F3E" stroke-width="1.8"></rect><path d="M4 7.5l8 6 8-6" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path></svg></span>
+          <span class="row-tx"><span class="row-t">이메일</span><span class="row-d">메일로 문의를 남길 수 있습니다.</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+        <a class="row" href="https://peopleinjesus.org" target="_blank" rel="noopener">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#8C6F3E" stroke-width="1.6"></circle><path d="M3.7 12h16.6M12 3.7c2.3 2.3 3.5 5.3 3.5 8.3s-1.2 6-3.5 8.3c-2.3-2.3-3.5-5.3-3.5-8.3s1.2-6 3.5-8.3z" stroke="#8C6F3E" stroke-width="1.6" fill="none"></path></svg></span>
+          <span class="row-tx"><span class="row-t">홈페이지</span><span class="row-d">peopleinjesus.org 바로가기</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+        <a class="row" href="https://www.youtube.com/@전현수-o7z" target="_blank" rel="noopener">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="6" width="19" height="12" rx="4" stroke="#8C6F3E" stroke-width="1.6"></rect><path d="M10.3 9.3l5 2.7-5 2.7z" fill="#8C6F3E"></path></svg></span>
+          <span class="row-tx"><span class="row-t">유튜브</span><span class="row-d">전현수 목사 유튜브 채널</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+        <a class="row" href="https://www.instagram.com/people_in_jesus.ch/" target="_blank" rel="noopener">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="#8C6F3E" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.2" stroke="#8C6F3E" stroke-width="1.6"></circle><circle cx="17" cy="7" r="1.1" fill="#8C6F3E"></circle></svg></span>
+          <span class="row-tx"><span class="row-t">교회 인스타그램</span><span class="row-d">@people_in_jesus.ch</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+        <a class="row" href="https://www.instagram.com/tta_life/" target="_blank" rel="noopener">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="#8C6F3E" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.2" stroke="#8C6F3E" stroke-width="1.6"></circle><circle cx="17" cy="7" r="1.1" fill="#8C6F3E"></circle></svg></span>
+          <span class="row-tx"><span class="row-t">개인 인스타그램</span><span class="row-d">@tta_life</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+        <a class="row" href="https://blog.naver.com/79jhs12" target="_blank" rel="noopener">
+          <span class="row-ic"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4.5h11l3 3V19.5H5z" stroke="#8C6F3E" stroke-width="1.6" fill="none" stroke-linejoin="round"></path><path d="M8.3 10h7.4M8.3 13.2h7.4M8.3 16.4h4.5" stroke="#8C6F3E" stroke-width="1.5" stroke-linecap="round"></path></svg></span>
+          <span class="row-tx"><span class="row-t">블로그</span><span class="row-d">blog.naver.com/79jhs12</span></span>
+          <span class="row-chev"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#8C6F3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+        </a>
+      </div>
+      <button class="cta" type="button">＋ 연락처 저장하기</button>
+
+      <div class="footer">
+        <p class="footer-h">Connect</p>
+        <div class="rule-deco"><span></span><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="#B4915A"></path></svg><span></span></div>
+        <div class="footer-icons">
+          <a href="tel:01072447951" aria-label="전화"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4c1-1 2-1 3 0l2 2c1 1 1 2-1 4l-1 1c1 2 2 3 4 4l1-1c2-2 3-2 4-1l2 2c1 1 1 2-1 3-3 3-8 2-12-2S3 7 6 4z" fill="#8C6F3E"></path></svg></span></a>
+          <a href="sms:01072447951" aria-label="문자"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4.2 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path><circle cx="8" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="12" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="16" cy="10.5" r="1.1" fill="#8C6F3E"></circle></svg></span></a>
+          <a href="mailto:hyunsoo1713@gmail.com" aria-label="메일"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2.5" fill="none" stroke="#8C6F3E" stroke-width="1.8"></rect><path d="M4 7.5l8 6 8-6" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path></svg></span></a>
+          <a href="https://peopleinjesus.org" target="_blank" rel="noopener" aria-label="홈페이지"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#8C6F3E" stroke-width="1.6"></circle><path d="M3.7 12h16.6M12 3.7c2.3 2.3 3.5 5.3 3.5 8.3s-1.2 6-3.5 8.3c-2.3-2.3-3.5-5.3-3.5-8.3s1.2-6 3.5-8.3z" stroke="#8C6F3E" stroke-width="1.6" fill="none"></path></svg></span></a>
+        </div>
+        <p class="made">© 2026 예수인교회. All rights reserved.</p>
+        <p class="made" style="margin-top:4px">이 명함은 바이브코딩으로 만들었습니다</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const contactButton = document.querySelector('.cta');
+  const contactVCard = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'N:전현수;;;',
+    'FN:전현수',
+    'ORG:예수인교회',
+    'TITLE:담임목사',
+    'TEL;TYPE=CELL:01072447951',
+    'EMAIL;TYPE=INTERNET:hyunsoo1713@gmail.com',
+    'URL:https://peopleinjesus.org',
+    'END:VCARD'
+  ].join('\r\n');
+
+  contactButton.addEventListener('click', async () => {
+    const filename = '전현수-예수인교회-연락처.vcf';
+    const blob = new Blob([contactVCard], { type: 'text/vcard;charset=utf-8' });
+    const downloadUrl = URL.createObjectURL(blob);
+    const downloadLink = document.createElement('a');
+    downloadLink.href = downloadUrl;
+    downloadLink.download = filename;
+    downloadLink.click();
+    setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+
+    if (navigator.share && navigator.canShare) {
+      const shareFile = new File([blob], filename, { type: 'text/vcard' });
+      if (navigator.canShare({ files: [shareFile] })) {
+        try {
+          await navigator.share({
+            files: [shareFile],
+            title: '전현수 · 예수인교회',
+            text: '예수인교회 연락처'
+          });
+        } catch (error) {
+          if (error.name !== 'AbortError') console.warn('연락처 공유를 완료하지 못했습니다.', error);
+        }
+      }
+    }
+  });
+</script>
+</body></html>
