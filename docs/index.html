@@ -144,9 +144,9 @@
   .footer{ text-align:center; margin-top:30px; }
   .footer-h{ margin:0; font-size:11.5px; font-weight:700; color:var(--ink-tertiary); letter-spacing:.28em; text-transform:uppercase; }
   .footer .rule-deco{ margin:12px 0; }
-  .footer-icons{ display:flex; gap:16px; justify-content:center; margin:14px 0 12px; }
-  .footer-icons .sic{ width:38px; height:38px; }
-  .footer-icons .sic svg{ width:16px; height:16px; }
+  .footer-qr{ display:block; width:176px; height:176px; margin:18px auto 10px; padding:10px; border:1px solid var(--primary-gold-light); border-radius:16px; background:#fff; }
+  .footer-qr img{ display:block; width:100%; height:100%; image-rendering:pixelated; }
+  .footer-qr-caption{ margin:0 0 20px; font-size:12px; line-height:1.6; color:var(--ink-secondary); }
   .made{ margin:0; font-size:11.5px; color:var(--ink-tertiary); }
 </style>
 
@@ -243,14 +243,10 @@
       <button class="cta" type="button">＋ 연락처 저장하기</button>
 
       <div class="footer">
-        <p class="footer-h">Connect</p>
+        <p class="footer-h">Share this card</p>
         <div class="rule-deco"><span></span><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z" fill="#B4915A"></path></svg><span></span></div>
-        <div class="footer-icons">
-          <a href="tel:01072447951" aria-label="전화"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><path d="M6 4c1-1 2-1 3 0l2 2c1 1 1 2-1 4l-1 1c1 2 2 3 4 4l1-1c2-2 3-2 4-1l2 2c1 1 1 2-1 3-3 3-8 2-12-2S3 7 6 4z" fill="#8C6F3E"></path></svg></span></a>
-          <a href="sms:01072447951" aria-label="문자"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H10l-4.2 4v-4H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path><circle cx="8" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="12" cy="10.5" r="1.1" fill="#8C6F3E"></circle><circle cx="16" cy="10.5" r="1.1" fill="#8C6F3E"></circle></svg></span></a>
-          <a href="mailto:hyunsoo1713@gmail.com" aria-label="메일"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2.5" fill="none" stroke="#8C6F3E" stroke-width="1.8"></rect><path d="M4 7.5l8 6 8-6" stroke="#8C6F3E" stroke-width="1.8" fill="none" stroke-linejoin="round"></path></svg></span></a>
-          <a href="https://peopleinjesus.org" target="_blank" rel="noopener" aria-label="홈페이지"><span class="sic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="#8C6F3E" stroke-width="1.6"></circle><path d="M3.7 12h16.6M12 3.7c2.3 2.3 3.5 5.3 3.5 8.3s-1.2 6-3.5 8.3c-2.3-2.3-3.5-5.3-3.5-8.3s1.2-6 3.5-8.3z" stroke="#8C6F3E" stroke-width="1.6" fill="none"></path></svg></span></a>
-        </div>
+        <div class="footer-qr"><img src="./card-qr.svg" width="156" height="156" alt="전현수 디지털 명함 링크 QR코드"></div>
+        <p class="footer-qr-caption">QR코드를 스캔하면 이 명함으로 연결됩니다.</p>
         <p class="made">© 2026 예수인교회. All rights reserved.</p>
         <p class="made" style="margin-top:4px">이 명함은 바이브코딩으로 만들었습니다</p>
       </div>
